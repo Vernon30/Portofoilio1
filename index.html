@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio - Vernon Engelbrecht</title>
+    <link rel="stylesheet" href="/Portofolio/Styles/style.css" />
+    <script src="Portofolio/JS/menu.js"></script>
+    <!-- JavaScript to handle the menu toggle -->
+  </head>
+  <body>
+    <!-- Navigation bar at the top -->
+    <nav class="navbar">
+      <div class="navbar-content">
+        <!-- Name and job title on the left -->
+        <div class="navbar-left">
+          <span class="navbar-name" class="navbar-name-job">Vernon Engelbrecht</span>
+          <span class="navbar-job" class="navbar-name-job">Software Engineer</span>
+        </div>
+        <!-- Hamburger menu and Navigation links -->
+        <div class="navbar-right">
+          <!-- Hamburger menu for phone view -->
+          <button class="hamburger-menu" onclick="toggleMenu()" class="headers">☰</button>
+          <!-- Hamburger icon -->
+          <!-- Navigation links -->
+          <ul class="navbar-links">
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#skills-education">Skills & Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main content container -->
+    <div class="main-content">
+      <!-- About Me section -->
+      <header id="about-me">
+        <div class="about-me-content">
+          <img
+            src="Portofolio/Pictures/Profile Picture.jpeg"
+            alt="Vernon Engelbregt"
+            class="profile-image"
+          />
+          <div class="main-aboutme-text">
+            <h1 class="headers">Portfolio of Vernon Engelbrecht</h1>
+            <p>
+              As a third-year Software Engineering student, I thrive on challenges and embrace failure as an opportunity to learn and grow. I'm driven by a constant desire to improve, whether it's through collaborative teamwork or independent projects.
+              <br>
+              <br>
+              I bring adaptability, creativity, and a strong work ethic to everything I do. Working both in teams and solo, I enjoy tackling problems and finding innovative solutions. I'm eager to contribute my skills to your team, ready to take on new challenges, and excited about the possibilities ahead. Let's connect and explore how we can achieve great things together!
+            </p>
+            <div class="button-container">
+              <button class="about-buttons buttons-heights"  onclick="window.open('Portofolio/Pictures/Vernon_Engelbrecht_CV_3.pdf')">CV</button>
+              <button class="about-buttons-img buttons-heights"><img class="about-img" src="Portofolio/Pictures/Linkin Icon.png" onclick="window.open('https://www.linkedin.com/in/vernon-engelbrecht-b8aa39259/')"></img></button>
+              <button class="about-buttons-img buttons-heights"><img class="about-img" src="Portofolio/Pictures/GitHub Icon.png" onclick="window.open('https://github.com/Vernon30')"></img></button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Skills & Education section -->
+      <section id="skills-education" class="skills-education">
+        <div class="skills">
+          <h2 class="headers">Skills</h2>
+          <div class="skills-list">
+            <li>
+              <img class="skill-icon" src="Portofolio/Pictures/C-Icon.png" alt="C#" /> C#
+            </li>
+            <li>
+              <img class="skill-icon" src="Portofolio/Pictures/CSS.png" alt="CSS" /> CSS
+            </li>
+            <li>
+              <img class="skill-icon" src="Portofolio/Pictures/HTML.png" alt="HTML" />
+              HTML
+            </li>
+            <li>
+              <img
+                class="skill-icon"
+                src="Portofolio/Pictures/Javascript.png"
+                alt="JavaScript"
+              />
+              JavaScript
+            </li>
+            <li>
+              <img class="skill-icon" src="Portofolio/Pictures/SQL.png" alt="SQL" /> SQL
+            </li>
+          </div>
+        </div>
+
+        <div class="education">
+          <h2 class="headers">Education</h2>
+          <div class="education-div">
+            <img
+              src="Portofolio/Pictures/BelguimCampus.png"
+              alt="Education"
+              class="education-image"
+            />
+            <p>
+              As a third-year student pursuing my Bachelor of Computing degree at Belgium Campus iTversity, I am actively seeking internship opportunities to apply my skills and gain practical experience in software engineering. Passionate about coding and problem-solving, I'm eager to contribute to innovative projects and continue learning and growing as a software engineer.
+            </p>
+            <img
+              src="Portofolio/Pictures/PNHS.png"
+              alt="Education"
+              class="education-image"
+            />
+            <p>
+              I graduated from High School Pretoria-Noord with a National Senior Certificate
+              form 2016-2020
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects section -->
+      <section id="projects">
+        <h2 class="headers">Projects</h2>
+        <div class="projects-list">
+          <a href="project1.html" class="project-card" onclick="window.open('https://vernon30.github.io/Bug-Tracker/')">
+            <img
+              src="/Portofolio/Pictures/Bug_tracker.png"
+              alt="Project 1"
+              class="project-image"
+            />
+            <h3>Bugtracker</h3>
+            <p>This is a ticket raiser and tracker, where tickets can be created and old tickets can be keep track.</p>
+          </a>
+
+          <a href="project2.html" class="project-card" onclick="window.open('https://github.com/Vernon30/Students-Modules')">
+            <img
+              src="Portofolio/Pictures/Students&Modules.png"
+              alt="Project 2"
+              class="project-image"
+            />
+            <h3>Students & Modules</h3>
+            <p>This is a project where you can add, search, delete students and their current modules</p>
+          </a>
+
+          <a href="project3.html" class="project-card" onclick="window.open('https://github.com/Vernon30/Loans-Intrest-Rate')">
+            <img
+              src="Portofolio/Pictures/Loans&IntrestRate.png"
+              alt="Project 3"
+              class="project-image"
+            />
+            <h3>Loans & Intrest Rate</h3>
+            <p>This is a project where you can get the intrest rate by the bank and get the new value of your business or personal loans</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Contact section -->
+      <section id="contact" class="contact-info">
+        <h2 class="headers">Contact</h2>
+        <p><strong>Name:</strong> Vernon Engelbrecht</p>
+        <p><strong>Phone:</strong> +27 79 886 9397</p>
+        <p>
+          <strong>Email:</strong>
+          <a class="email-ancor" href="mailto:vernonengelbrecht123@gmail.com"
+            >vernonengelbrecht123@gmail.com</a
+          >
+        </p>
+        <!-- Button to open mail client with pre-filled email address -->
+        <a href="mailto:Vernonengelbrecht123@gmail.com" class="contact-button" >Email me </a>
+        
+      </section>
+    </div>
+  </body>
+</html>
